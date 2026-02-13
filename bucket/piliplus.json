@@ -1,0 +1,32 @@
+{
+    "version": "1.1.6.4626",
+    "description": "PiliPlus, a cross-platform application built with Flutter",
+    "homepage": "https://github.com/bggRGjQaUbCoE/PiliPlus",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/1.1.6/PiliPlus_windows_1.1.6%2B4626_x64.zip",
+            "hash": "132c335a9f3509c15299ae4a5aaa7aa6328a4c635e972bd25720a7317a29f1ef"
+        }
+    },
+    "extract_dir": "PiliPlus-Win",
+    "bin": "piliplus.exe",
+    "shortcuts": [
+        [
+            "piliplus.exe",
+            "PiliPlus"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/bggRGjQaUbCoE/PiliPlus",
+        "regex": "PiliPlus_windows_([\\d.]+)\\+(\\d+)_x64\\.zip",
+        "replace": "${1}.${2}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$matchHead/PiliPlus_windows_$matchHead%2B$matchTail_x64.zip"
+            }
+        }
+    }
+}
