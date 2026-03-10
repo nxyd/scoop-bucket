@@ -1,0 +1,29 @@
+{
+    "version": "0.2.7",
+    "description": "简洁美观的代理工具",
+    "homepage": "https://github.com/GtxFury/FlyClash",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/GtxFury/FlyClash/releases/download/v0.2.7/FlyClash-0.2.7-x64-setup.7z",
+            "hash": "1ebce5b08d019c4dd18a6d7b41d124e5efd36dc2dee9ca4ae81ac47a6ee6b4ba"
+        }
+    },
+    "bin": "FlyClash.exe",
+    "shortcuts": [
+        [
+            "FlyClash.exe",
+            "FlyClash"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/GtxFury/FlyClash"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/GtxFury/FlyClash/releases/download/v$version/FlyClash-$version-x64-setup.7z"
+            }
+        }
+    }
+}
