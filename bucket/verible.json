@@ -20,7 +20,7 @@
         "verible-verilog-syntax.exe"
     ],
     "checkver": {
-        "github": "chipsalliance/verible",
+        "github": "https://github.com/chipsalliance/verible",
         "regex": "v?([\\d.-]+-g[a-f0-9]+)"
     },
     "autoupdate": {
