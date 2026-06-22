@@ -19,7 +19,10 @@
         "verible-verilog-project.exe",
         "verible-verilog-syntax.exe"
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "chipsalliance/verible",
+        "regex": "v?([\\d.-]+-g[a-f0-9]+)"
+    },
     "autoupdate": {
         "url": "https://github.com/chipsalliance/verible/releases/download/v$version/verible-v$version-win64.zip",
         "extract_dir": "verible-v$version-win64"
