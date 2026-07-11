@@ -12,10 +12,13 @@
             "SyncClipboard"
         ]
     ],
-    "persist": "SyncClipboard.json",
+    "persist": [
+        "SyncClipboard.json",
+        "appdata"
+    ],
     "pre_install": [
         "if (!(Test-Path \"$dir\\StaticConfig.json\")) {",
-        "    Set-Content \"$dir\\StaticConfig.json\" '{\"Env\": {\"PortableUserConfig\": true}}' -Encoding Ascii",
+        "    Set-Content \"$dir\\StaticConfig.json\" '{\"Env\": {\"PortableUserConfig\": true, \"PortableAppDataFolder\": true}}' -Encoding Ascii",
         "}",
         "if (!(Test-Path \"$dir\\SyncClipboard.json\")) {",
         "    New-Item \"$dir\\SyncClipboard.json\" -Type File | Out-Null",
