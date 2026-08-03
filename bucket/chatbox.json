@@ -1,0 +1,37 @@
+{
+    "version": "1.22.1",
+    "description": "A desktop client for multiple cutting-edge AI models",
+    "homepage": "https://chatboxai.app/",
+    "license": "GPL-3.0-or-later",
+    "url": "https://download.chatboxai.app/releases/Chatbox-1.22.1-Setup.exe#/dl.7z",
+    "hash": "476666ea51fb725b7453dace0934a0f186672545115dfa931e015d28e05ffb3f",
+    "architecture": {
+        "64bit": {
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+        },
+        "arm64": {
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\""
+        }
+    },
+    "bin": [
+        [
+            "Chatbox.exe",
+            "chatbox",
+            "--user-data-dir=\"$persist_dir\""
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Chatbox.exe",
+            "Chatbox",
+            "--user-data-dir=\"$persist_dir\""
+        ]
+    ],
+    "persist": "data",
+    "checkver": {
+        "github": "https://github.com/chatboxai/chatbox"
+    },
+    "autoupdate": {
+        "url": "https://download.chatboxai.app/releases/Chatbox-$version-Setup.exe#/dl.7z"
+    }
+}
