@@ -1,0 +1,24 @@
+{
+    "version": "4.9.20",
+    "description": "批量打印 PDF、OFD 及图片版电子发票的免安装工具",
+    "homepage": "https://printpdf.github.io/",
+    "license": "Freeware",
+    "url": "https://printpdf.github.io/PrintPDF4.9.20.7z",
+    "hash": "4e29cfd8c9e73acdb617e4d39aa326db2269647dcf0e68063d0a1808cd76a3ee",
+    "extract_dir": "发票闪印4.9.20",
+    "bin": "PrintPDF.exe",
+    "shortcuts": [
+        [
+            "PrintPDF.exe",
+            "发票闪印"
+        ]
+    ],
+    "checkver": {
+        "url": "https://printpdf.github.io/version.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "url": "https://printpdf.github.io/PrintPDF$version.7z",
+        "extract_dir": "发票闪印$version"
+    }
+}
