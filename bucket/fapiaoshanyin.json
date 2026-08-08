@@ -13,6 +13,14 @@
             "发票闪印"
         ]
     ],
+    "persist": "config",
+    "pre_install": [
+        "$persistScript = if ($bucket) { Join-Path $bucketsdir \"$bucket\\scripts\\fapiaoshanyin.ps1\" } elseif ($url -and (Test-Path -LiteralPath $url)) { Join-Path (Split-Path (Split-Path $url)) 'scripts\\fapiaoshanyin.ps1' }",
+        "if (!$persistScript -or !(Test-Path -LiteralPath $persistScript)) { throw 'Unable to locate the fapiaoshanyin persistence script.' }",
+        "Copy-Item $persistScript \"$dir\\fapiaoshanyin-persist.ps1\""
+    ],
+    "post_install": "& \"$dir\\fapiaoshanyin-persist.ps1\" -Mode Install -Dir $dir -PersistDir $persist_dir",
+    "pre_uninstall": "if (Test-Path -LiteralPath \"$dir\\fapiaoshanyin-persist.ps1\") { & \"$dir\\fapiaoshanyin-persist.ps1\" -Mode Uninstall -Dir $dir -PersistDir $persist_dir }",
     "checkver": {
         "url": "https://printpdf.github.io/version.json",
         "jsonpath": "$.version"
