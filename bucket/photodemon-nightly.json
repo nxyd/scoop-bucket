@@ -1,10 +1,10 @@
 {
-    "version": "2026.06.26.163047",
+    "version": "2026.08.19.230119",
     "description": "Portable photo editor (nightly build)",
     "homepage": "https://photodemon.org/",
     "license": "BSD-3-Clause",
     "url": "https://github.com/tannerhelland/PhotoDemon/releases/download/PhotoDemon-nightly/PhotoDemon-nightly.zip",
-    "hash": "44038994f91ca3aff5fcaf5bbb56f67ad12d06bf6f8e5e3cfe040ebb452e7650",
+    "hash": "a7ffe9c47125aebf879c758c207ea3b06c14f6f75b194cf595d52708613c2a6d",
     "bin": "PhotoDemon.exe",
     "persist": "Data",
     "shortcuts": [
