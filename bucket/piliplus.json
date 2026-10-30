@@ -18,7 +18,8 @@
         ]
     ],
     "checkver": {
-        "github": "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus",
+        "github": "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases/latest",
+        "jsonpath": "$.assets[*].browser_download_url",
         "regex": "releases/download/(?<tag>[\\d.]+)/PiliPlus_windows_(?<filever>[\\d.]+)%2B(?<build>\\d+)_x64_portable\\.zip",
         "replace": "${filever}.${build}"
     },
