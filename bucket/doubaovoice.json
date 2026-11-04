@@ -1,0 +1,35 @@
+{
+    "version": "1.4.1",
+    "description": "豆包语音输入（独立版）：按住快捷键说话，松开自动输入到光标处",
+    "homepage": "https://github.com/yc-2018/DoubaoVoiceIME",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/yc-2018/DoubaoVoiceIME/releases/download/v1.4.1/DoubaoVoice.exe",
+            "hash": "33b5426c0b24f730fd001ee0bace5aa440436e4ee0e23b80f61751a7b309d126"
+        }
+    },
+    "bin": "DoubaoVoice.exe",
+    "pre_install": [
+        "if (-not (Test-Path \"$dir\\config.json\")) { New-Item -ItemType File -Path \"$dir\\config.json\" -Force | Out-Null }"
+    ],
+    "persist": [
+        "config.json"
+    ],
+    "shortcuts": [
+        [
+            "DoubaoVoice.exe",
+            "豆包语音输入"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/yc-2018/DoubaoVoiceIME"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/yc-2018/DoubaoVoiceIME/releases/download/v$version/DoubaoVoice.exe"
+            }
+        }
+    }
+}
