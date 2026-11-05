@@ -1,12 +1,12 @@
 {
-    "version": "16.37.27308",
+    "version": "16.38.27408",
     "description": "Desktop trading platform for stocks, options, ETFs, and other securities",
     "homepage": "https://www.moomoo.com/",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://softwaredownload.futustatic.com/moomoo_desktop_16.37.27308.exe#/dl.7z",
-            "hash": "f9201238bef98802b9acb7c12a48d7d1d42fc7aee5d386604ad21f319188bc22"
+            "url": "https://softwaredownload.futustatic.com/moomoo_desktop_16.38.27408.exe#/dl.7z",
+            "hash": "b8ddc2cb09149418673d5d97626769ccefd2952b5bac377eb71adae5926cf724"
         }
     },
     "extract_dir": "$_10_",
