@@ -1,12 +1,12 @@
 {
-    "version": "0.3.6",
+    "version": "0.3.7",
     "description": "简洁美观的网络工具，基于 Clash 内核（原 FlyClash）",
     "homepage": "https://github.com/Devi766/Diodos",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Devi766/Diodos/releases/download/v0.3.6/Diodos_0.3.6_windows-x64-portable.zip",
-            "hash": "a168dac1b57788729228d685c0cc3d0cd91fd2134fc22d890d1222530ec44d11"
+            "url": "https://github.com/Devi766/Diodos/releases/download/v0.3.7/Diodos_0.3.7_windows-x64-portable.zip",
+            "hash": "584e54d7a1dee502c74c9d26566213dc0af051e54b8c2907a44d41de52563073"
         }
     },
     "bin": "diodos.exe",
