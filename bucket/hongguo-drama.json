@@ -1,12 +1,12 @@
 {
-    "version": "8.2",
+    "version": "8.3",
     "description": "红果短剧桌面版：三来源搜索、播放、下载与追剧",
     "homepage": "https://github.com/jackotom/hongguo-drama",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jackotom/hongguo-drama/releases/download/v8.2/hongguo-downloader-8.2-win-x64.exe",
-            "hash": "d77bd7bec1d717abeba80fefd79d0fab8df28dcca85865f97b72e30258b1ef1f"
+            "url": "https://github.com/jackotom/hongguo-drama/releases/download/v8.3/hongguo-downloader-8.3-win-x64.exe",
+            "hash": "714e7079db83fd06750d0d4624bb0e56dc7ae4dd038db5f35628c31ca1819c60"
         }
     },
     "installer": {
